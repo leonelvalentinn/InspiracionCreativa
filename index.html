@@ -15,16 +15,19 @@
     <nav>
       <a href=""><img src="img/logo-1.png" alt=""></a>
       <div class="container-menu">
-        <a href=""><i class="bi bi-whatsapp"></i></a>
-        <a href=""><i class="bi bi-telephone"></i></a>
-        <a id="btn-menu"><i class="bi bi-list"></i></a>
+        <a href=""><i class="bi1 bi bi-whatsapp"></i></a>
+        <a href=""><i class="bi1 bi bi-telephone"></i></a>
+        <a id="btn-menu"><i class="bi1 bi bi-list"></i></a>
       </div>
     </nav>
-    <div class="container-overlay">
-      <div class="overlay-content">
+    <div class="container-overlay" id="fondo">
+      <div class="overlay-content" id="item">
         <div class="overlay-menu">
-          <a id="close-menu"><i class="bi bi-x-lg"></i></a>
-          <ul>
+          <div class="botones">
+            <a id="back"><i class="bi bi-arrow-left-short"></i></a>
+            <a id="close-menu"><i class="bi2 bi bi-x-lg"></i></a>
+          </div>
+          <ul id="menu-1">
             <li>Inicio</li>
             <li>Nosotros</li>
             <li><a id="servicios">Servicios ></a></li>
@@ -32,7 +35,7 @@
             <li>Clientes</li>
             <li>Contacto</li>
           </ul>
-          <ul>
+          <ul class="servicios-items" id="servicios-items">
             <li>Desarrollo Web</li>
             <li>Social Media</li>
             <li>Branding</li>
@@ -40,12 +43,12 @@
           </ul>
         </div>
         <div class="overlay-contact">
-          <ul>
-            <li>Dirección</li>
+          <ul id="menu-2">
+            <li class="title-li">Dirección</li>
             <li>Correspondencia 28, Benito Juarez, CDMX, 06090</li>
           </ul>
-          <ul>
-            <li>Redes Sociales</li>
+          <ul id="menu-3"> 
+            <li class="title-li">Redes Sociales</li>
             <li>Instagram</li>
             <li>Facebook</li>
             <li>TikTok</li>
@@ -54,5 +57,17 @@
       </div>
     </div>
   </header>
+  <section class="hero">
+    <video src="video/video-des.mp4" autoplay loop muted></video>
+    <div class="texto-hero">
+      <h1>wrgergwrg</h1>
+      <h4>ergergergerg</h4>
+      <div>
+        <a href="">Contáctanos</a>
+        <a href="">Servicios</a>
+      </div>
+    </div>
+  </section>
+  <script src="js/script.js"></script>
 </body>
 </html>
