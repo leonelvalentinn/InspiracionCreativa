@@ -79,6 +79,7 @@ body {
 .title-li {
   margin-bottom: 10px;
   color: blueviolet;
+  font-weight: bold;
 }
 .servicios-items {
   opacity: 0;
@@ -100,21 +101,47 @@ body {
   align-items: center;
 }
 .hero {
-  filter: drop-shadow(0 0 1px);
-}
-.video-hero {
-  position: fixed;
-  top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(1px);
 }
 .txt-hero {
   display: flex;
   z-index: 99;
-  position: relative;
+  position: fixed;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
+  background-image: url(../img/Overlay_Video-Home.png);backdrop-filter: blur(10px);
+  color: white;
+  padding: 10px;
+  margin: 0 10px;
+  border-radius: 10px;
+  width: 90%;
 }
+.txt-hero h4 {
+  font-size: 1.5em;
+}
+.txt-hero p {
+  color: white;
+  font-size: 1.1em;
+}
+.txt-hero a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+  background-color: rgb(97, 97, 97);
+  border-radius: 10px;
+}
+.txt-hero a:nth-child(1) {
+  margin-right: 10px
+}
+.botones-con {
+  display: flex;
+}
+
 @keyframes quitarMenuServicios {
   0%{
     opacity: 1;
@@ -187,4 +214,103 @@ body {
   100% {
     height: 0;
   }
+}
+.container-why {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 6%;
+  flex-direction: column;
+}
+.container-why h2 {
+  text-align: center;
+}
+.container-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
+  gap: 10px;
+}
+.container-grid .grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+  padding: 10px;
+}
+.container-grid .grid-item h3, .container-grid .grid-item p {
+  text-align: center;
+}
+.container-grid .grid-item h3 {
+  margin-bottom: 20px;
+}
+.container-grid .grid-item img {
+  width: 40px;
+  height: 40px;
+}
+.container-grid .grid-item .image {
+  padding: 20px;
+  width: 70px;
+  height: 70px;
+  border-radius: 25px;
+  background-color: rgb(116, 116, 116);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.container-porque {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.porque h2, .porque p {
+  text-align: center;
+  margin-top: 10px;
+}
+.porque h2 {
+  font-weight: 600;
+}
+.container-porque img {
+  border-radius: 20px;
+}
+.container-servicios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 6%;
+}
+.container-servicios h2 {
+  text-align: center;
+}
+.container-servicios .servicio-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.container-servicios img {
+  border-radius: 20px;
+  filter: grayscale(100%);
+  margin-bottom: 10px;
+  margin-top: 25px;
+}
+.container-servicios img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+.container-servicios img:hover {
+  background-color: blueviolet;
+}
+.container-servicios a {
+  padding: 7px 13px;
+  background-color: rgb(97, 97, 97);
+  text-decoration: none;
+  color: white;
+  width: auto;
+  border-radius: 5px;
 }

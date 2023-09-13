@@ -20,19 +20,24 @@ const menu2 = document.getElementById('menu-2');
 const menu3 = document.getElementById('menu-3');
 const serviciositems = document.getElementById('servicios-items');
 const back = document.getElementById('back');
+const closeM = document.getElementById("close-menu");
 
 document.getElementById("servicios").addEventListener('click', function (){
   servicios.classList.add('quitarItems');
   menu2.classList.add('quitarItems');
   menu3.classList.add('quitarItems');
   serviciositems.classList.add('mostrar-servicios-menu');
-  back.style.opacity = "1";
+  back.classList.add('mostrar-servicios-menu');
+  closeM.classList.add('mostrar-servicios-menu');
 });
 
 document.getElementById("back").addEventListener('click', function () {
   servicios.classList.remove('quitarItems');
   menu2.classList.remove('quitarItems');
   menu3.classList.remove('quitarItems');
+  menu.classList.add('mostrar');
+  items.classList.add('mostrarI');
   serviciositems.classList.remove('mostrar-servicios-menu');
-  back.style.opacity = "0";
+  back.classList.remove('mostrar-servicios-menu');
+  closeM.classList.remove('mostrar-servicios-menu');
 });
