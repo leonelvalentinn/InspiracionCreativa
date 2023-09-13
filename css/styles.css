@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+:root {
+  --swiper-theme-color: white !important;
+}
 
 * {
   width: 100%;
@@ -314,3 +317,70 @@ body {
   width: auto;
   border-radius: 5px;
 }
+.testimonios .swiper {
+  width: 600px;
+  height: 300px;
+}
+.testimonios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-testimonio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 15px;
+  border: 2px solid gray;
+  border-radius: 20px;
+  width: 350px;
+}
+.swiper-slide {
+  display: flex !important;
+  justify-content: center;
+}
+.testimonios hr {
+  width: 90px;
+  background-color: gray;
+  border-top: 3px solid gray;
+}
+.form--group {
+  position: relative;
+  --color: #5757577e;
+  width: 300px;
+}
+.form--input {
+  width: 100%;
+  font-family: inherit;
+  font-size: 1rem;
+  color: #706c6c;
+  padding: .6em .3em;
+  border: none;
+  outline: none;
+  background-color: black;
+  border-bottom: 1px solid var(--color);
+}
+.form--label {
+  color: var(--color);
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  transform: translateY(10px);
+  transition: transform .5s, color .3s;
+}
+.form--input:focus + .form--label,
+.form--input:not(:placeholder-shown) + .form--label {
+  transform: translateY(-12px) scale(.7);
+  transform-origin: top left;
+  --color: #3866f2;
+}
+.cuentanos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.cuentanos 
