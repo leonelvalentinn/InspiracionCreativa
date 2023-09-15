@@ -64,8 +64,11 @@
     </div>
   </header>
   <section class="hero">
-    <div class="video-hero">
+    <div class="video-hero mov">
       <video src="video/video-des.mp4" autoplay loop muted></video>
+    </div>
+    <div class="video-hero des">
+      <video src="video/video-cel.mp4" autoplay loop muted></video>
     </div>
     <div class="txt-hero">
       <h4>Inspiración Creativa</h4>
@@ -109,7 +112,6 @@
       <img src="img/porque.jpg" alt="">
     </div>
   </section>
-  <hr>
   <section class="container-servicios">
     <h2>Servicios</h2>
     <div class="container-grid">
@@ -151,7 +153,7 @@
       </div>
     </div>
   </section>
-  <hr>
+  
   <section class="testimonios">
     <!-- Slider main container -->
     <div class="swiper">
@@ -194,28 +196,62 @@
     <div>
       <form action="mensaje.php" method="post">
         <div class="form--group">
-          <input type="text" name="name" id="name" class="form--input" placeholder=" ">
-          <label for="name" class="form--label">Nombre:</label>
+          <input type="text" name="name" id="name" class="form--input" placeholder=" " required>
+          <label for="name" class="form--label">Nombre de tu proyecto:</label>
         </div>
         <div class="form--group">
-          <input type="email" name="email" id="email" class="form--input" placeholder=" ">
+          <input type="email" name="email" id="email" class="form--input" placeholder=" " required>
           <label for="email" class="form--label">Email:</label>
         </div>
         <div class="form--group">
-          <input type="tel" name="tel" id="tel" class="form--input" placeholder=" ">
-          <label for="tel" class="form--label">Teléfono:</label>
+          <input type="tel" name="tel" id="tel" class="form--input" placeholder=" " pattern="[0-9]{10}" required>
+          <label for="tel" class="form--label">WhatsApp:</label>
         </div>
         <div class="form--group">
-          <input type="servicio" name="servicio" id="servicio" class="form--input" placeholder=" ">
-          <label for="servicio" class="form--label">Servicio:</label>
+          <input type="servicio" name="servicio" id="servicio" class="form--input" placeholder=" " required>
+          <label for="servicio" class="form--label">Servicio en el que estás interesado:</label>
         </div>
         <div class="form--group">
-          <input type="text" name="mensaje" id="mensaje" class="form--input" placeholder=" ">
+          <input type="text" name="mensaje" id="mensaje" class="form--input" placeholder=" " required>
           <label for="mensaje" class="form--label">Mensaje:</label>
+        </div>
+        <div class="inputs">
+          <input type="submit" value="Correo">
+          <input type="submit" value="WhatsApp">
         </div>
       </form>
     </div>
   </section>
+  <footer>
+    <div class="footer-1">
+      <div class="menu-footer">
+        <h1>Menú</h1>
+        <div class="contacto-footer">
+          <a href="">Nosotros</a>
+          <a href="">Servicios</a>
+          <a href="">Casos de Éxito</a>
+          <a href="">Clientes</a>
+        </div>
+        <a href=""><img src="img/logo.png" alt=""></a>
+        <div class="redes-footer">
+          <h1>Síguenos</h1>
+          <div class="container-redes-footer">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-tiktok"></i>
+            <i><svg width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+              <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"/>
+            </svg></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-2">
+      <p>© 2023 Todos los derechos reservados Inspiración Creativa.
+
+        Desarrollado por Agencia Inspiración Creativa</p>
+    </div>
+  </footer>
   <script src="js/script.js"></script>
 </body>
 </html>
