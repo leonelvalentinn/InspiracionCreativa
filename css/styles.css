@@ -466,11 +466,39 @@ footer img {
   margin: 0 auto;
   transform: scale(1.4);
 }
+@media (min-width: 426px) {
+  .container-header {
+    height: 100px;
+  }
+  .container-header img {
+    width: 200px;
+  }
+}
 @media (min-width: 768px) {
   .mov {
     display: none;
   }
   .des {
     display: block;
+  }
+  .hero {
+    margin-top: 100px;
+  }
+  .container-header nav i {
+    justify-content: end;
+  }
+  .container-grid {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: baseline;
+    margin-top: 20px;
+  }
+  .container-porque img {
+    width: 600px;
+  }
+  .container-porque {
+    margin-top: 20px;
+  }
+  .menu-footer {
+    flex-direction: row;
   }
 }
