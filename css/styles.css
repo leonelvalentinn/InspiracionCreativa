@@ -66,6 +66,17 @@ body {
 .container-overlay .overlay-content {
   opacity: 0;
   width: 0;
+  padding: 30px;
+}
+.grid-item ul {
+  list-style: none;
+}
+.grid-item ul li {
+  margin-bottom: 10px;
+}
+.grid-item ul li img {
+  width: 100%;
+  margin-right: 20px;
 }
 .container-overlay .mostrarI {
   animation: showMenuItems 1.2s ease-in-out forwards;
@@ -183,6 +194,7 @@ body {
 }
 @keyframes showMenuItems {
   0%{
+    display: flex;
     opacity: 0;
     width: 100%;
   }
@@ -207,6 +219,7 @@ body {
   100%{
     opacity: 0;
     width: 0;
+    display: none;
   }
 }
 @keyframes showMenu {
@@ -277,7 +290,7 @@ body {
   flex-direction: column;
 }
 .porque h2, .porque p {
-  text-align: center;
+  text-align: justify;
   margin-top: 10px;
 }
 .porque h2 {
@@ -309,6 +322,9 @@ body {
   align-items: center;
   flex-direction: column;
   text-align: center;
+}
+.container-servicios .servicio-item h3 {
+  color: black;
 }
 .container-servicios img {
   border-radius: 20px;
@@ -361,6 +377,79 @@ body {
   background-color: gray;
   border-top: 3px solid gray;
 }
+/*Form styles*/
+.form-control {
+  font-family: system-ui, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.1;
+}
+.form-control {
+  font-family: system-ui, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.1;
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 0.5em;
+}
+input[type="checkbox"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: #fff;
+  /* Not removed via appearance */
+  margin: 0;
+}
+input[type="checkbox"] {
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid currentColor;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+
+.form-control + .form-control {
+  margin-top: 1em;
+}
+.form-control {
+  padding: 0 !important;
+  background-color: black !important;
+  color: #706c6c !important;
+  display: flex !important;
+  border: none !important;
+}
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+  background-color: CanvasText;
+}
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+.checkboxes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-content: center;
+  align-items: baseline;
+}
+.checkboxes .form-control {
+  width: max-content !important;
+}
+/*end Form Control*/
 .form--group {
   position: relative;
   --color: #ffffff7e;
