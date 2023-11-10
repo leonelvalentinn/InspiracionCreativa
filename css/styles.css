@@ -67,6 +67,7 @@ body {
   opacity: 0;
   width: 0;
   padding: 30px;
+  display: none;
 }
 .grid-item ul {
   list-style: none;
@@ -489,7 +490,9 @@ input[type="checkbox"]:checked::before {
 }
 .inputs input {
   background-color: rgb(25, 37, 201);
-  width: 150px;
+  width: max-content;
+  padding: 7px 15px;
+  border-radius: 5px;
   border: none;
 }
 .cuentanos {

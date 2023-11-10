@@ -245,12 +245,16 @@
   </section>
   <section class="cuentanos">
     <h1>Cuéntanos más sobre tu proyecto</h1>
-    <h4>Estaremos encatados de atenderte, juntos enontraremos la mejor estrategia para impulsar tu proyecto.</h4>
+    <h4>Estaremos encantados de atenderte, juntos encontraremos la mejor estrategia para impulsar tu proyecto.</h4>
     <div>
-      <form action="mensaje.php" method="post">
+      <form action="correo.php" method="post">
         <div class="form--group">
           <input type="text" name="name" id="name" class="form--input" placeholder=" " required>
-          <label for="name" class="form--label">Nombre de tu proyecto:</label>
+          <label for="name" class="form--label">Nombre:</label>
+        </div>
+        <div class="form--group">
+          <input type="text" name="name-p" id="name-p" class="form--input" placeholder=" ">
+          <label for="name-p" class="form--label">Nombre de tu proyecto:</label>
         </div>
         <div class="form--group">
           <input type="email" name="email" id="email" class="form--input" placeholder=" " required>
@@ -260,45 +264,48 @@
           <input type="tel" name="tel" id="tel" class="form--input" placeholder=" " pattern="[0-9]{10}" required>
           <label for="tel" class="form--label">Teléfono:</label>
         </div>
+        <div class="form--group">
+          <input type="hidden" name="tel" id="servicio" class="form--input" placeholder=" " pattern="[0-9]{10}" required>
+          <label for="servicio" class="form--label">Servicios que te interesan:</label>
+        </div>
         <div class="form--group checkboxes">
           <label class="form-control">
-            <input type="checkbox" name="checkbox" />
+            <input type="checkbox" name="servicio-1" value="Diseño"/>
             Diseño
           </label>
           <label class="form-control">
-            <input type="checkbox" name="checkbox-checked" checked />
+            <input type="checkbox" name="servicio-2" value="Desarrollo Web"/>
             Desarrollo Web
           </label>
           <label class="form-control">
-            <input type="checkbox" name="checkbox" />
+            <input type="checkbox" name="servicio-3" value="Branding"/>
             Branding
           </label>
           <label class="form-control">
-            <input type="checkbox" name="checkbox-checked" checked />
+            <input type="checkbox" name="servicio-4" value="SEO"/>
             SEO
           </label>
           <label class="form-control">
-            <input type="checkbox" name="checkbox-checked" checked />
+            <input type="checkbox" name="servicio-5" value="Social Media"/>
             Social Media
           </label>
           <label class="form-control">
-            <input type="checkbox" name="checkbox" />
+            <input type="checkbox" name="servicio-7" value="Marketing Digital"/>
             Marketing Digital
           </label>
           <label class="form-control">
-            <input type="checkbox" name="checkbox-checked" checked />
+            <input type="checkbox" name="servicio-8" value="SEM"/>
             SEM
           </label>
           <!--<input type="servicio" name="servicio" id="servicio" class="form--input" placeholder=" " required>
           <label for="servicio" class="form--label">Servicio en el que estás interesado:</label>-->
         </div>
         <div class="form--group">
-          <input type="text" name="mensaje" id="mensaje" class="form--input" placeholder=" " required>
-          <label for="mensaje" class="form--label">Mensaje:</label>
+          <textarea type="text" name="mensaje" id="mensaje" class="form--input" placeholder=" " rows="5" cols="33"></textarea>
+          <label for="mensaje" class="form--label">Cuéntanos más sobre tu proyecto:</label>
         </div>
         <div class="inputs">
-          <input type="submit" value="Correo">
-          <input type="submit" value="WhatsApp">
+          <input type="submit" value="Enviar">
         </div>
       </form>
     </div>

@@ -2,6 +2,7 @@ const menu = document.getElementById('fondo');
 const items = document.getElementById('item');
 
 document.getElementById("btn-menu").addEventListener('click', function(){
+  items.style.display = "block";
   menu.classList.add('mostrar');
   items.classList.add('mostrarI');
   menu.classList.remove('quitar');
@@ -13,6 +14,9 @@ document.getElementById("close-menu").addEventListener('click', function() {
   items.classList.add('quitarI');
   menu.classList.remove('mostrar');
   items.classList.remove('mostrarI');
+  setTimeout(function(){
+    items.style.display = "none";
+  }, 500)
 });
 
 const servicios = document.getElementById('menu-1');
