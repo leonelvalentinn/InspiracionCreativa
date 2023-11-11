@@ -48,7 +48,7 @@ $servicios = [
 
 $subject = 'Hola, solicito información sobre sus servicios';
 
-for($i = 0; $i<6; $i++) {
+for($i = 0; $i<8; $i++) {
   if(!empty($servicios[$i])) {
     $servicios[$i] = $x . $servicios[$i];
   }
