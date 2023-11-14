@@ -9,6 +9,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
   <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
@@ -21,6 +23,9 @@
     <nav>
       <a href=""><img src="img/logo.png" alt=""></a>
       <div class="container-menu">
+        <a class="nav-des" href="index.html">Inicio</a>
+        <a class="nav-des" href="#Nosotros">Nosotros</a>
+        <a class="nav-des" href="#Servicios">Servicios</a>
         <a href=""><i class="bi1 bi bi-whatsapp"></i></a>
         <a href=""><i class="bi1 bi bi-telephone"></i></a>
         <a id="btn-menu"><i class="bi1 bi bi-list"></i></a>
@@ -33,13 +38,13 @@
             <a id="back"><i class="bi bi-arrow-left-short"></i></a>
             <a id="close-menu"><i class="bi2 bi bi-x-lg"></i></a>
           </div>
-          <ul id="menu-1">
-            <li>Inicio</li>
-            <li>Nosotros</li>
-            <li><a id="servicios">Servicios ></a></li>
-            <li>Casos de Éxito</li>
-            <li>Clientes</li>
-            <li>Contacto</li>
+          <ul id="menu-1" class="buttons">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#Nosotros"></a></li>
+            <li id="servicios">Servicios <i class="fi fi-sr-angle-small-right"></i></li>
+            <li><a href="#casos">Casos de Éxito</a></li>
+            <li><a href="#Clientes">Clientes</a></li>
+            <li><a href="wa.me/525514476309" target="_blank">Contacto</a></li>
           </ul>
           <ul class="servicios-items" id="servicios-items">
             <li>Desarrollo Web</li>
@@ -51,13 +56,13 @@
         <div class="overlay-contact">
           <ul id="menu-2">
             <li class="title-li">Dirección</li>
-            <li>Correspondencia 28, Benito Juarez, CDMX, 06090</li>
+            <li>Benito Juarez, CDMX, 06090</li>
           </ul>
-          <ul id="menu-3"> 
+          <ul id="menu-3" class="buttons-s"> 
             <li class="title-li">Redes Sociales</li>
-            <li>Instagram</li>
-            <li>Facebook</li>
-            <li>TikTok</li>
+            <li><a href="#insta">Instagram</a></li>
+            <li><a href="#face">Facebook</a></li>
+            <li><a href="#tik">TikTok</a></li>
           </ul>
         </div>
       </div>
@@ -79,8 +84,19 @@
         </div>
     </div>
   </section>
-  <section class="container-why">
+  <section class="container-why" id="Nosotros">
     <h2>¿Qué es Inspiración Creativa?</h2>
+    <div class="container-porque">
+      <h2>¿Por qué elegirnos?</h2>
+      <div class="porque">
+        <p>Somos tu mejor opción en marketing digital al ofrecer un enfoque integral que abarca diseño, programación, branding, SEO, SEM y marketing de contenidos.
+          Destacamos por nuestra experiencia y constante adaptación a las últimas tendencias, brindando a los clientes soluciones actualizadas y efectivas.
+          Nos distinguimos por un enfoque personalizado, colaborando estrechamente con cada cliente para comprender y abordar sus metas específicas.
+          Demostramos resultados tangibles a través de casos de éxito, respaldando la efectividad de nuestros servicios y construyendo confianza.
+          Nuestra agencia se distingue por la creatividad en el diseño, la transparencia en los procesos, y la optimización continua basada en análisis de datos para garantizar el éxito a largo plazo de nuestros clientes.</p>
+        <img src="img/porque.jpg" alt="">
+      </div>
+    </div>
     <div class="container-grid">
       <div class="grid-item">
         <div class="image">
@@ -91,6 +107,13 @@
           compuesta por profesionales expertos en canales digitales y en constante actualización. 
           Somos expertos del comercio electrónico y redes sociales. Contamos con todas las 
           certificaciones necesarias para crear y administrar exitosos proyectos digitales.</p>
+          <ul>
+            <li><img src="img/Iconos/experiencia.png" alt="">10 años de experiencia</li>
+            <li><img src="img/Iconos/empresario.png" alt="">Equipo de Profesionales</li>
+            <li><img src="img/Iconos/certificado.png" alt="">Certificados</li>
+            <li><img src="img/Iconos/servicio-al-cliente.png" alt="">+300 Clientes Satisfechos</li>
+            <li><img src="img/Iconos/gestion-de-proyectos.png" alt="">Innovación</li>
+          </ul>
       </div>
       <div class="grid-item">
         <div class="image">
@@ -124,17 +147,6 @@
             <li><img src="img/Iconos/buscador.png" alt="">Optimización Continua</li>
             <li><img src="img/Iconos/lista-de-verificacion.png" alt="">Cumplimiento de Objetivos</li>
           </ul>
-      </div>
-    </div>
-    <div class="container-porque">
-      <h2>¿Por qué elegirnos?</h2>
-      <div class="porque">
-        <p>Somos tu mejor opción en marketing digital al ofrecer un enfoque integral que abarca diseño, programación, branding, SEO, SEM y marketing de contenidos.
-          Destacamos por nuestra experiencia y constante adaptación a las últimas tendencias, brindando a los clientes soluciones actualizadas y efectivas.
-          Nos distinguimos por un enfoque personalizado, colaborando estrechamente con cada cliente para comprender y abordar sus metas específicas.
-          Demostramos resultados tangibles a través de casos de éxito, respaldando la efectividad de nuestros servicios y construyendo confianza.
-          Nuestra agencia se distingue por la creatividad en el diseño, la transparencia en los procesos, y la optimización continua basada en análisis de datos para garantizar el éxito a largo plazo de nuestros clientes.</p>
-        <img src="img/porque.jpg" alt="">
       </div>
     </div>
   </section>
@@ -183,10 +195,23 @@
         <p>Creamos y distribuimos contenido valioso y relevante para atraer, retener y convertir a la audiencia, fortaleciendo la presencia online de tus clientes.</p>
         <a href="">Ver más</a>
       </div>
+      <div class="servicio-item">
+        <img src="img/foto.jpg" alt="">
+        <h3>Sesión Fotográfica</h3>
+        <p>Creamos y distribuimos contenido valioso y relevante para atraer, retener y convertir a la audiencia, fortaleciendo la presencia online de tus clientes.</p>
+        <a href="">Ver más</a>
+      </div>
+      <div class="servicio-item">
+        <img src="img/video.jpg" alt="">
+        <h3>Video</h3>
+        <p>Creamos y distribuimos contenido valioso y relevante para atraer, retener y convertir a la audiencia, fortaleciendo la presencia online de tus clientes.</p>
+        <a href="">Ver más</a>
+      </div>
     </div>
   </section>
   
   <section class="testimonios">
+    <h2>Testimonios</h2>
     <!-- Slider main container -->
     <div class="swiper">
       <!-- Additional required wrapper -->
@@ -245,8 +270,8 @@
   </section>
   <section class="cuentanos">
     <h1>Cuéntanos más sobre tu proyecto</h1>
-    <h4>Estaremos encantados de atenderte, juntos encontraremos la mejor estrategia para impulsar tu proyecto.</h4>
     <div>
+      <h4>Estaremos encantados de atenderte, juntos encontraremos la mejor estrategia para impulsar tu proyecto.</h4>
       <form action="correo.php" method="post">
         <div class="form--group">
           <input type="text" name="name" id="name" class="form--input" placeholder=" " required>
@@ -296,6 +321,14 @@
           <label class="form-control">
             <input type="checkbox" name="servicio-8" value="SEM"/>
             SEM
+          </label>
+          <label class="form-control">
+            <input type="checkbox" name="servicio-9" value="Video"/>
+            Video
+          </label>
+          <label class="form-control">
+            <input type="checkbox" name="servicio-10" value="Sesión Fotográfica"/>
+            Sesión Fotográfica
           </label>
           <!--<input type="servicio" name="servicio" id="servicio" class="form--input" placeholder=" " required>
           <label for="servicio" class="form--label">Servicio en el que estás interesado:</label>-->

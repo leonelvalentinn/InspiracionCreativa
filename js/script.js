@@ -46,7 +46,29 @@ document.getElementById("back").addEventListener('click', function () {
   closeM.classList.remove('mostrar-servicios-menu');
 });
 
+const buttons = document.querySelector(".buttons");
+buttons.onclick = (e) => {
+    menu.classList.add('quitar');
+    items.classList.add('quitarI');
+    menu.classList.remove('mostrar');
+    items.classList.remove('mostrarI');
+    setTimeout(function(){
+      items.style.display = "none";
+    }, 500);
+}
+const button = document.querySelector(".buttons-s");
+button.onclick = (e) => {
+    menu.classList.add('quitar');
+    items.classList.add('quitarI');
+    menu.classList.remove('mostrar');
+    items.classList.remove('mostrarI');
+    setTimeout(function(){
+      items.style.display = "none";
+    }, 500);
+}
+
 const swiper = new Swiper('.swiper', {
+  slidesPerView: '1',
   spaceBetween: 30,
   effect: 'coverflow',
   // Optional parameters
@@ -66,4 +88,12 @@ const swiper = new Swiper('.swiper', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  breakpoints: {
+    // when window width is >= 320px
+    // when window width is >= 640px
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    }
+  }
 });

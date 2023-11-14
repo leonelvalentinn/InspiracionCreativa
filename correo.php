@@ -44,6 +44,8 @@ $servicios = [
   $_POST['servicio-6'],
   $_POST['servicio-7'],
   $_POST['servicio-8'],
+  $_POST['servicio-9'],
+  $_POST['servicio-10'],
 ];
 
 $subject = 'Hola, solicito información sobre sus servicios';
@@ -76,6 +78,8 @@ $message = str_replace('%servicio5%', $servicios[4], $message);
 $message = str_replace('%servicio6%', $servicios[5], $message);
 $message = str_replace('%servicio7%', $servicios[6], $message);
 $message = str_replace('%servicio8%', $servicios[7], $message);
+$message = str_replace('%servicio9%', $servicios[8], $message);
+$message = str_replace('%servicio10%', $servicios[9], $message);
 
 $mail->MsgHTML($message);
 $mail->Subject = $subject;

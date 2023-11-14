@@ -42,6 +42,9 @@ body {
   align-items: center;
   justify-content: center;
 }
+.nav-des {
+  display: none;
+}
 .container-header .bi-list {
   font-size: 30px;
 }
@@ -104,9 +107,6 @@ body {
   opacity: 0;
   height: 0;
 }
-.mostrar-servicios-menu {
-  animation: showServicios 1s ease-in-out forwards;
-}
 .quitarItems {
   animation: quitarMenuServicios 0.5s ease-in-out forwards;
 }
@@ -114,6 +114,9 @@ body {
   opacity: 0;
   margin-left: 25px;
   font-size: 35px;
+}
+.mostrar-servicios-menu {
+  animation: showServicios 1s ease-in-out forwards;
 }
 .botones {
   display: flex;
@@ -142,6 +145,7 @@ body {
   margin: 0 10px;
   border-radius: 10px;
   width: 90%;
+  max-width: 500px;
 }
 .txt-hero h4 {
   font-size: 1.5em;
@@ -299,6 +303,7 @@ body {
 }
 .container-porque img {
   border-radius: 20px;
+  width: 100%;
 }
 .container-servicios {
   display: flex;
@@ -313,6 +318,7 @@ body {
 .container-servicios h2 {
   text-align: center;
   font-weight: bold;
+  margin-top: 30px;
 }
 .container-servicios p {
   color: black;
@@ -332,17 +338,19 @@ body {
   /*filter: grayscale(100%);*/
   margin-bottom: 10px;
   margin-top: 25px;
+  transition: all 0.175s linear;
 }
 .container-servicios img:hover {
   /*filter: grayscale(0%);*/
-  transform: scale(1.1);
+  transition: all 0.175s linear;
+  transform: scale(1.05);
 }
 .container-servicios img:hover {
   background-color: blueviolet;
 }
 .container-servicios a {
   padding: 7px 13px;
-  background-color: rgb(25, 37, 201);
+  background-color: #706c6c;
   text-decoration: none;
   color: white;
   width: auto;
@@ -356,6 +364,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  padding-top: 20px;
+}
+.testimonios h2 {
+  text-align: center;
 }
 .container-testimonio {
   display: flex;
@@ -489,7 +502,7 @@ input[type="checkbox"]:checked::before {
   align-items: center;
 }
 .inputs input {
-  background-color: rgb(25, 37, 201);
+  background-color: #706c6c;
   width: max-content;
   padding: 7px 15px;
   border-radius: 5px;
@@ -514,6 +527,16 @@ input[type="checkbox"]:checked::before {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+.botones-con a:hover, .servicio-item a:hover, .inputs input:hover {
+  transition: all 0.2s linear;
+  transform: scale(1.1);
+}
+.botones-con a, .servicio-item a, .inputs input {
+  transition: all 0.2s linear;
+}
+.checkboxes .form-control {
+  cursor: pointer;
 }
 footer {
   display: flex;
@@ -573,24 +596,59 @@ footer img {
   .des {
     display: block;
   }
+  .nav-des {
+    display: block;
+  }
   .hero {
     margin-top: 100px;
   }
   .container-header nav i {
     justify-content: end;
   }
+  .container-header a {
+    width: max-content;
+  }
+  .container-menu {
+    justify-content: space-around;
+  }
+  .botones {
+    justify-content: space-between;
+  }
+  .overlay-menu ul li {
+    font-size: 20px;
+  }
+  .overlay-contact ul li {
+    font-size: 20px;
+  }
+  .overlay-content {
+    max-width: 600px;
+  }
   .container-grid {
     grid-template-columns: repeat(3, 1fr);
     align-items: baseline;
     margin-top: 20px;
   }
+  .porque {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .container-porque img {
-    width: 600px;
+    max-width: 550px;
+    height: min-content;
+    margin-left: 50px;
   }
   .container-porque {
     margin-top: 20px;
   }
   .menu-footer {
     flex-direction: row;
+  }
+  .testimonios .swiper {
+    width: 100%;
+    height: 300px;
+  }
+  .form--group { 
+    width: 500px;
   }
 }
