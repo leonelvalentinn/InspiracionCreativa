@@ -59,7 +59,7 @@ for($i = 0; $i<8; $i++) {
 $mail->From = $correo;
 $mail->FromName = $nombre;
 $email_template = 'mail_template.html';
-$email = 'dentariosmx@gmail.com';
+$email = 'inspiracioncreativacdmx@gmail.com';
 $f_name = 'Dentarios';
 
 
